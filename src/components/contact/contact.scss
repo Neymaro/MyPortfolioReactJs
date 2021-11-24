@@ -1,0 +1,111 @@
+$mob-width:873px;
+.contact{
+    background-color: #1F2123;
+
+    h1{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        font-size: 35px;
+        color: white;
+    }
+    .containerTab{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+        @media(max-width:$mob-width){
+            flex-direction: column;
+        }
+
+        .contact-left{
+            display: flex;
+            flex-direction: column;
+            justify-self: start;
+            
+        
+            
+            .textbox{
+                width: 200px;
+                height: 35px;
+                color: white;
+                padding: 10px 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+                background-color: #3E4144;
+                align-items: center;
+                border: 0;
+                border-radius: 5px;
+                @media(max-width:$mob-width){
+                    width: 355px;
+                }
+                
+            }
+            .textbox:hover{
+                background-color: #2c3033;
+                border: 0;
+            }
+            .textbox:active{
+                border:0;
+            }
+        }
+
+        .contact-right{
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            align-items: end;
+            
+            @media(max-width:$mob-width){
+                display: flex;
+                width: 100%;
+                flex-direction: column;}
+            
+            .message{
+                background-color: #3E4144;
+                width: 500px;
+                height: 220px;
+                border: 0px;
+                border-radius: 11px;
+                font-size: 17px;
+                font-weight: 300;
+                font-family: 'Lato';
+                padding: 15px;
+                color: white;
+                resize: none;
+                margin-bottom: 5px;
+
+                @media(max-width:$mob-width)
+                {
+                    width: 345px;
+                }
+                
+            }
+            .message:hover{
+                background-color: #2c3033;
+                border: 0;
+            }
+
+            button{
+                width: 127px;
+                height: 30px;
+                color: white;
+                background-color: #3E4144;
+                font-family: 'Lato';
+                font-size: 17px;
+                border: 0;
+                border-radius: 6px;
+
+                @media(max-width:$mob-width){
+                    width: 355px;
+                }
+            }
+
+        }
+
+    }
+}

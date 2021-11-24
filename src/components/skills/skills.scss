@@ -1,0 +1,117 @@
+$mob-width:873px;
+
+.skills{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+      font-size: 45px;
+      margin-top: 10px;
+    }
+
+    .container {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        @media(max-width:$mob-width){
+          overflow: hidden;
+          flex-direction: column;
+          width: 50%;
+          margin-top: 10px;
+      }
+
+        .card{
+          width: 250px;
+          height: 70%;
+          border-radius: 10px;
+          box-shadow: 0px 0px 15px -8px black;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 20px;
+          transition: all 1s ease;
+          @media(max-width:$mob-width){
+            margin-bottom: 5px;
+            overflow: revert;
+          }
+
+          .top{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+              img{
+                height: 80px;
+                width: 80px;
+                border-radius: 70%;
+                object-fit: cover;
+
+                @media(max-width:$mob-width){
+                  height: 35px;
+                  width: 35px;
+                  border-radius: 70%;
+                  overflow: hidden;
+                }
+              }
+
+              
+
+            }
+           .center
+           {
+                padding: 10px;
+                border-radius: 7px;
+                background-color: rgba(20, 190, 220, 0.096);
+                @media(max-width:$mob-width){
+                  font-size: 13px;
+                  margin: 10px;
+                }
+            }
+           .bottom{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h3{
+                  font-size: 22px;
+                  font-weight: 500; 
+                  
+                  @media(max-width:$mob-width){
+                    font-size: 15px;
+                  }
+                }
+            }
+              
+        }
+        .card:hover{
+          background-color: rgba(0, 0, 0, 0.055);
+          cursor: pointer;
+          width: 300px;
+          height: 75%;
+          transition: all 1s ease;
+          @media(max-width:$mob-width){
+            width: 320px;
+          }
+          img{
+            height: 90px;
+            width: 90px;
+            transition: all 1s ease;
+            @media(max-width:$mob-width){
+              height: 40px;
+              width: 40px;
+              border-radius: 70%;
+              overflow: hidden;
+            }
+          }
+
+        }
+    }
+    
+        
+}

@@ -1,0 +1,10 @@
+$width:1620px;
+
+
+@mixin responsive {
+    @media(max-width:#{$width}){
+        @content
+    }
+
+}
+

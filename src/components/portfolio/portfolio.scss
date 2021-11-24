@@ -1,0 +1,104 @@
+@import "../../mobile.scss";
+
+$mob-width:873px;
+
+.portfolio{
+    background-color: #1F2123;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2b86be;
+    
+    @include responsive{
+        margin-top: -155px;
+    }
+
+    
+
+    .container{
+        display: flex;
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+
+        .item{
+            width: 220px;
+            height: 150px;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+            margin: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            h3{
+                position: absolute;
+                font-size: 16px;
+                color: white;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 2;
+            }
+            
+            &:hover{
+                background-color: #1F2123;
+                img {
+                    opacity: 0.6;
+                    z-index: 0;
+                    }
+            }
+            
+        }
+    }
+
+    h1{
+        margin-top: 25px;
+        font-size: 40px;
+        @media(max-width:$mob-width){
+            font-size: 38px;
+            padding: 22px;
+            overflow: hidden;
+        }
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 10px;
+        padding: 15px;
+        @media(max-width:$mob-width){
+            font-size: 20px;
+            overflow: revert;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        
+        li{
+            font-size: 18px;
+            margin-right: 7px;
+            padding: 10px;
+            cursor: pointer;
+    
+            &.active{
+                background-color: #04396D;
+                color: #52B7E9;
+                padding: 10px;
+            }
+        }
+        li:hover{
+            background-color: #04396D;
+            color: #52B7E9;
+            padding: 10px;
+        }
+
+    }
+
+}
